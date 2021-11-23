@@ -23,6 +23,10 @@ const routes: Routes = [
         path: '',
         redirectTo: '/tabs/tab1',
         pathMatch: 'full'
+      },
+      {
+        path: 'publicacion/:publicacionId',
+        loadChildren: () => import ('../publicacion/publicacion.module').then(m=> m.PublicacionComponentModule)
       }
     ]
   },

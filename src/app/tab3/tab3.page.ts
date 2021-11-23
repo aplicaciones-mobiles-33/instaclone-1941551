@@ -7,6 +7,15 @@ import { Component } from '@angular/core';
 })
 export class Tab3Page {
 
+  usuario = 'Ruffles';
+  seguidores = 200000;
+  publicaciones = 12;
+  siguiendo = 32;
+  descripcion = 'hola, mundo';
+  nombre = 'ruffles';
+
+
   constructor() {}
+
 
 }
