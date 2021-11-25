@@ -1,8 +1,15 @@
+/* eslint-disable @typescript-eslint/member-ordering */
 import { Component, OnInit } from '@angular/core';
+import { PublicacionRoutingModule } from '../publicacion/publicacion-routing.module';
+//import { HttpClient } from '@angular/common/http';
+//import * as data from '../../assets/feed.json';
+//import { dashCaseToCamelCase } from '@angular/compiler/src/util';
+
+import { FirebaseDbService } from '../firebase-db.service';
 
 export interface Publicaciones{
-  imagen;
-  id;
+  imagen: string;
+  id: number;
 }
 
 @Component({
@@ -12,28 +19,23 @@ export interface Publicaciones{
 })
 export class PublicacionesComponent implements OnInit {
 
-  constructor() { }
+  constructor(private db: FirebaseDbService) { }
 
-  ngOnInit() {}
+   publicaciones = [];
+
+   obtenerPublicaciones(): void {
+     this.db.getPublicaciones().subscribe(
+       res => {
+         console.log(res);
+         this.publicaciones = res;
+       }
+     );
+   }
 
 
-     // eslint-disable-next-line @typescript-eslint/member-ordering
-     publicacionesArreglo: Publicaciones[] = [
-      {
-        imagen: '../../assets/images/Post 1.jpg',
-        id: 1
-      },
-      {
-        imagen: '../../assets/images/Post 2.png',
-        id: 2
-      },
-      {
-        imagen: '../../assets/images/Post 3.png',
-        id: 3
-      },
-      {
-        imagen: '../../assets/images/Post 4.png',
-        id: 4
-      }
-    ];
+
+  ngOnInit() {
+    this.obtenerPublicaciones();
+
+  }
 }

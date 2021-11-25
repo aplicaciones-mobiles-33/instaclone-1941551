@@ -14,8 +14,6 @@ import { PublicacionRoutingModule } from '../publicacion/publicacion-routing.mod
   exports: [PublicacionesComponent]
 })
 
-
-
 export class PublicacionesComponentModule {
   constructor(){}
 }

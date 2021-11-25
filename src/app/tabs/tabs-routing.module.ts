@@ -25,7 +25,7 @@ const routes: Routes = [
         pathMatch: 'full'
       },
       {
-        path: 'publicacion/:publicacionId',
+        path: 'p/:id', //p/:id
         loadChildren: () => import ('../publicacion/publicacion.module').then(m=> m.PublicacionComponentModule)
       }
     ]

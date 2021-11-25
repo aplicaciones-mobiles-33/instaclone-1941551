@@ -1,0 +1,63 @@
+{
+  "usuario": {
+          "nombre": "maxelsolovino",
+          "seguidores": 4389308,
+          "siguiendo": 3,
+          "posts": 12,
+          "bio": "soy adoptado pero mi famila me ama",
+          "avatar": "avatar.jpg"
+
+  },
+  "publicaciones": [
+
+      {
+        "id": 1,
+        "usuario": "ruffles",
+        "imagenPost": "../assets/images/Post 1.jpg",
+        "avatarUsuario": "../assets/images/avatar.jpg",
+        "descripcionPost": "hello hello helloo"
+      },
+      {
+        "id": 2,
+        "usuario": "maxelsolovino",
+        "imagenPost": "../assets/images/Post 2.png",
+        "avatarUsuario": "../assets/images/avatar.jpg",
+        "descripcionPost": "holaaaa"
+      },
+      {
+        "id": 3,
+        "usuario": "oreo",
+        "imagenPost": "../assets/images/Post 3.png",
+        "avatarUsuario": "../assets/images/avatar.jpg",
+        "descripcionPost": "la pura vida <3"
+      },
+      {
+        "id": 4,
+        "usuario": "corgimaya",
+        "imagenPost": "../assets/images/Post 4.png",
+        "avatarUsuario": "../assets/images/avatar.jpg",
+        "descripcionPost": "<3  <3 <3 <3 "
+      },
+      {
+        "id": 5,
+        "usuario": "maxelsolovino",
+        "imagenPost": "../assets/images/Post 5.png",
+        "avatarUsuario": "../assets/images/avatar.jpg",
+        "descripcionPost": "un perro "
+      },
+      {
+        "id": 6,
+        "usuario": "lucio",
+        "imagenPost": "../assets/images/Post 6.png",
+        "avatarUsuario": "../assets/images/avatar.jpg",
+        "descripcionPost": "una bocina "
+      },
+      {
+        "id": 7,
+        "usuario": "sos",
+        "imagenPost": "../assets/images/Post 7.png",
+        "avatarUsuario": "../assets/images/avatar.jpg",
+        "descripcionPost": "mariachi 1 hora baladas buchonas "
+      }
+    ]
+}
